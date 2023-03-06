@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import styles from "../../../styles/header.module.scss";
+import styles from "../../styles/header.module.scss";
 import Headerimg from "./headerimg.png";
 interface Props {}
 
