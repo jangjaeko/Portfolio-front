@@ -30,13 +30,23 @@ export default function Header() {
         />
         {/* </Link> */}
       </div>
-      <div>
-        <TitleColor>awewda</TitleColor>
-      </div>
+      <Menu>
+        <TitleColor>About Me</TitleColor>
+        <TitleColor>Skills</TitleColor>
+        <TitleColor>Archiving</TitleColor>
+        <TitleColor>Projects</TitleColor>
+        <TitleColor>Career</TitleColor>
+      </Menu>
     </header>
   );
 }
 
 const TitleColor = styled.h2`
   color: ${({ theme }) => theme.colors.orange};
+  margin-left: 2vw;
+  font-size: 1rem;
+  font-family: PreLight;
+`;
+const Menu = styled.div`
+  ${({ theme }) => theme.common.flexRow}
 `;
