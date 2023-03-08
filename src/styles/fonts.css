@@ -17,3 +17,8 @@
   font-family: "PreMedium";
   src: url("../fonts/Pretendard-Medium.otf") format("opentype");
 }
+
+@font-face {
+  font-family: "PreExBold";
+  src: url("../fonts/Pretendard-ExtraBold.otf") format("opentype");
+}

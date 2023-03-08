@@ -10,9 +10,9 @@ interface Props {}
 
 export default function Header() {
   const router = useRouter();
-  const gotodown = () => {
+  const gotoTop = () => {
     window.scrollTo({
-      top: 1000,
+      top: 0,
       behavior: "smooth",
     });
   };
@@ -21,13 +21,14 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.flexItems}>
         {/* <Link href="/" className={styles.box}> */}
-        <Image
+        {/* <Image
           onClick={() => alert("ddd")}
           src={Headerimg}
           width={51}
           height={58}
           alt={""}
-        />
+        /> */}
+        <LogoText onClick={() => gotoTop()}>JJH's Portpolio</LogoText>
         {/* </Link> */}
       </div>
       <Menu>
@@ -46,6 +47,12 @@ const TitleColor = styled.h2`
   margin-left: 2vw;
   font-size: 1rem;
   font-family: PreLight;
+`;
+const LogoText = styled.h2`
+  color: ${({ theme }) => theme.colors.orange};
+  margin-left: 2vw;
+  font-size: 1rem;
+  font-family: PreBold;
 `;
 const Menu = styled.div`
   ${({ theme }) => theme.common.flexRow}
