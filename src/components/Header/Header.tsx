@@ -16,7 +16,13 @@ export default function Header() {
       behavior: "smooth",
     });
   };
-
+  const handleClickScroll = () => {
+    const element = document.getElementById("section-1");
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <header className={styles.header}>
       <div className={styles.flexItems}>
@@ -33,7 +39,7 @@ export default function Header() {
       </div>
       <Menu>
         <TitleColor>About Me</TitleColor>
-        <TitleColor>Skills</TitleColor>
+        <TitleColor onClick={() => handleClickScroll()}>Skills</TitleColor>
         <TitleColor>Archiving</TitleColor>
         <TitleColor>Projects</TitleColor>
         <TitleColor>Career</TitleColor>

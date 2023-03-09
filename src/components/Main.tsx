@@ -6,7 +6,9 @@ export default function Main() {
   return (
     <div>
       <FirstSection />
-      <SecondSection />
+      <section id="section-1">
+        <SecondSection />
+      </section>
     </div>
   );
 }

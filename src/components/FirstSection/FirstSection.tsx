@@ -16,19 +16,23 @@ export default function FirstSection() {
         style={{
           position: "absolute",
           zIndex: -10,
-          opacity: 0.7,
+          opacity: 0.9,
+          width: "100vw",
+          height: "80vh",
         }}
-        width={"100vw"}
-        height={"80vh"}
+        alt=""
       />
-      <Title onClick={() => gotodown()}> 장재호(Michael)'s Portpolio</Title>
+      <Title style={{ marginTop: "4vh" }} onClick={() => gotodown()}>
+        {" "}
+        장재호(Michael)'s Portpolio
+      </Title>
       <Title>- Web / App Developer -</Title>
       <div
         style={{
           width: "15vw",
           height: "1vh",
           backgroundColor: "black",
-          marginTop: "5vh",
+          marginTop: "2vh",
         }}
       ></div>
       <SubText style={{ marginTop: "5vh" }}>
@@ -48,7 +52,7 @@ const MainView = styled.div`
 `;
 const Title = styled.span`
   font-family: PreExBold;
-  color: #000000;
+  color: #ffffff;
   font-size: 1.8rem;
 `;
 const SubText = styled.span`
