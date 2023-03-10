@@ -69,7 +69,7 @@ export default function SecondSection() {
             <Content>
               <ContentTitle>Education</ContentTitle>
               <ContentSub>Sejoing Univ</ContentSub>
-              <ContentSub>Computer Software Engineering</ContentSub>
+              <ContentSub>Software Engineering</ContentSub>
             </Content>
           </InfoSection>
         </div>

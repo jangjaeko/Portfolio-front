@@ -1,14 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useState } from "react";
 import styles from "../../styles/header.module.scss";
-import Headerimg from "./headerimg.png";
+import Hambur from "./Hamburger.png";
 import styled from "styled-components";
 
 interface Props {}
 
 export default function Header() {
+  const [ToggleOn, setToggleOn] = useState(false);
   const router = useRouter();
   const gotoTop = () => {
     window.scrollTo({
@@ -44,6 +45,9 @@ export default function Header() {
         <TitleColor>Projects</TitleColor>
         <TitleColor>Career</TitleColor>
       </Menu>
+      <Hamburger>
+        <Image src={Hambur} alt="" style={{ width: "4vh", height: "3vh" }} />
+      </Hamburger>
     </header>
   );
 }
@@ -62,4 +66,16 @@ const LogoText = styled.h2`
 `;
 const Menu = styled.div`
   ${({ theme }) => theme.common.flexRow}
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+`;
+
+const Hamburger = styled.div`
+  ${({ theme }) => theme.common.flexCenter}
+  width: 6vh;
+  height: 7vh;
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
 `;

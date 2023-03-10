@@ -102,7 +102,7 @@ const size = {
 
 const device = {
   mobile: `@media (min-width: ${size.mobile})`,
-  tabletS: `@media (min-width: ${size.tabletS})`,
+  tabletS: `@media (max-width: ${size.tabletS})`,
   tabletM: `@media (min-width: ${size.tabletM})`,
   tabletL: `@media (min-width: ${size.tabletL})`,
   laptop: `@media (min-width: ${size.laptop})`,
