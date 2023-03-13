@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 export default function SecondSection() {
   return (
-    <MainView style={{ height: "60vh" }}>
+    <MainView>
       <div style={{ borderBottomWidth: 10, borderBottomColor: "#000000" }}>
         <Title> About Me</Title>
       </div>
@@ -20,8 +20,9 @@ export default function SecondSection() {
           marginTop: "2vh",
           display: "flex",
           alignItems: "center",
-
-          paddingLeft: "10vw",
+          width: "100%",
+          paddingTop: "10vh",
+          paddingBottom: "10vh",
         }}
       >
         <div className="col-md-6  col-lg-4">
@@ -79,7 +80,8 @@ export default function SecondSection() {
 }
 const MainView = styled.div`
   ${({ theme }) => theme.common.flexCenterColumn};
-  background-image: url("./Backgroudimg.jpg");
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 `;
 
 const Title = styled.span`

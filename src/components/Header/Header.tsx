@@ -75,7 +75,7 @@ const Hamburger = styled.div`
   ${({ theme }) => theme.common.flexCenter}
   width: 6vh;
   height: 7vh;
-  @media screen and (min-width: 900px) {
+  ${({ theme }) => theme.device.tabletS} {
     display: none;
   }
 `;
