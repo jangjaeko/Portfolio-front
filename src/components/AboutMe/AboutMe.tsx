@@ -1,5 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import Image from "next/image";
+import Name from "./images/name.png";
+import birth from "./images/birth.png";
+import address from "./images/address.png";
+import email from "./images/email.png";
+import github from "./images/github.png";
+import education from "./images/education.png";
+import Link from "next/link";
 export default function SecondSection() {
   return (
     <MainView>
@@ -10,7 +18,7 @@ export default function SecondSection() {
         style={{
           width: "15vw",
           height: "1vh",
-          backgroundColor: "#1263ce",
+          backgroundColor: "#444444",
           marginTop: "2vh",
         }}
       ></div>
@@ -25,48 +33,92 @@ export default function SecondSection() {
           paddingBottom: "10vh",
         }}
       >
-        <div className="col-md-6  col-lg-4">
+        <div className="col-md-6  col-lg-4 col-sm-12">
           <InfoSection>
+            <IconSection>
+              <Image
+                src={Name}
+                style={{ width: "5vh", height: "5vh" }}
+                alt=""
+              />
+            </IconSection>
             <Content>
               <ContentTitle>Name</ContentTitle>
               <ContentSub>Jang Jaeho (Michael)</ContentSub>
             </Content>
           </InfoSection>
         </div>
-        <div className="col-md-6  col-lg-4">
+        <div className="col-md-6  col-lg-4 col-sm-12">
           <InfoSection>
+            <IconSection>
+              <Image
+                src={birth}
+                style={{ width: "5vh", height: "5vh" }}
+                alt=""
+              />
+            </IconSection>
             <Content>
               <ContentTitle>Birth</ContentTitle>
               <ContentSub>1997.06.26</ContentSub>
             </Content>
           </InfoSection>
         </div>
-        <div className="col-md-6  col-lg-4">
+        <div className="col-md-6  col-lg-4 col-sm-12">
           <InfoSection>
+            <IconSection>
+              <Image
+                src={address}
+                style={{ width: "5vh", height: "5vh" }}
+                alt=""
+              />
+            </IconSection>
             <Content>
               <ContentTitle>Address</ContentTitle>
               <ContentSub>Seoul, Korea</ContentSub>
             </Content>
           </InfoSection>
         </div>
-        <div className="col-md-6  col-lg-4">
+        <div className="col-md-6  col-lg-4 col-sm-12">
           <InfoSection>
+            <IconSection>
+              <Image
+                src={email}
+                style={{ width: "5vh", height: "5vh" }}
+                alt=""
+              />
+            </IconSection>
             <Content>
-              <ContentTitle>Name</ContentTitle>
-              <ContentSub>Chang Jaeho (Michael)</ContentSub>
+              <ContentTitle>Email</ContentTitle>
+              <ContentSub>jangjaeko45@gmail.com</ContentSub>
             </Content>
           </InfoSection>
         </div>
-        <div className="col-md-6  col-lg-4">
+        <div className="col-md-6  col-lg-4 col-sm-12">
           <InfoSection>
+            <IconSection>
+              <Image
+                src={github}
+                style={{ width: "6vh", height: "6vh" }}
+                alt=""
+              />
+            </IconSection>
             <Content>
-              <ContentTitle>Name</ContentTitle>
-              <ContentSub>Chang Jaeho (Michael)</ContentSub>
+              <ContentTitle>Github</ContentTitle>
+              <Link href="https://github.com/jangjaeko/" passHref={true}>
+                <ContentSub>https://github.com/jangjaeko</ContentSub>
+              </Link>
             </Content>
           </InfoSection>
         </div>
-        <div className="col-md-6  col-lg-4" style={{ marginTop: "3vh" }}>
+        <div className="col-md-6  col-lg-4 col-sm-12">
           <InfoSection>
+            <IconSection>
+              <Image
+                src={education}
+                style={{ width: "5vh", height: "5vh" }}
+                alt=""
+              />
+            </IconSection>
             <Content>
               <ContentTitle>Education</ContentTitle>
               <ContentSub>Sejoing Univ</ContentSub>
@@ -91,13 +143,20 @@ const Title = styled.span`
 `;
 
 const InfoSection = styled.div`
-  ${({ theme }) => theme.common.flexColumn};
+  ${({ theme }) => theme.common.flexRow};
+  padding-left: 10%;
+  margin-top: 2vh;
 `;
 
 const Content = styled.div`
+  width: 60%;
+  height: 10vh;
   ${({ theme }) => theme.common.flexColumn};
 `;
-
+const IconSection = styled.div`
+  width: 30%;
+  ${({ theme }) => theme.common.flexCenterColumn};
+`;
 const ContentTitle = styled.span`
   font-family: PreBold;
   color: #1263ce;
