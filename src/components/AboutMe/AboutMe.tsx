@@ -10,7 +10,7 @@ export default function SecondSection() {
         style={{
           width: "15vw",
           height: "1vh",
-          backgroundColor: "black",
+          backgroundColor: "#1263ce",
           marginTop: "2vh",
         }}
       ></div>
@@ -86,7 +86,7 @@ const MainView = styled.div`
 
 const Title = styled.span`
   font-family: PreExBold;
-  color: #000000;
+  color: #1263ce;
   font-size: 1.8rem;
 `;
 
@@ -100,11 +100,11 @@ const Content = styled.div`
 
 const ContentTitle = styled.span`
   font-family: PreBold;
-  color: #555555;
+  color: #1263ce;
   text-align: left;
 `;
 const ContentSub = styled.span`
   font-family: PreMedium;
-  color: #555555;
+  color: #8eccff;
   text-align: left;
 `;

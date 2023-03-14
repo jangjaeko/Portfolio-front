@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
-import Bg from "./Backgroudimg.jpg";
+import Bg from "./Backgroundimg.jpg";
 export default function FirstSection() {
   const gotodown = () => {
     window.scrollTo({
@@ -16,7 +16,7 @@ export default function FirstSection() {
         style={{
           position: "absolute",
           zIndex: -10,
-          opacity: 0.9,
+          opacity: 0.88,
           width: "100vw",
           height: "80vh",
         }}
@@ -31,7 +31,7 @@ export default function FirstSection() {
         style={{
           width: "15vw",
           height: "1vh",
-          backgroundColor: "black",
+          backgroundColor: "#FFFFFF",
           marginTop: "2vh",
         }}
       ></div>
