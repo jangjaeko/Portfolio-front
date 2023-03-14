@@ -29,7 +29,7 @@ export default function SecondSection() {
           <InfoSection>
             <Content>
               <ContentTitle>Name</ContentTitle>
-              <ContentSub>Chang Jaeho (Michael)</ContentSub>
+              <ContentSub>Jang Jaeho (Michael)</ContentSub>
             </Content>
           </InfoSection>
         </div>

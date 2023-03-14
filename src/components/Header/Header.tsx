@@ -17,13 +17,26 @@ export default function Header() {
       behavior: "smooth",
     });
   };
-  const handleClickScroll = () => {
-    const element = document.getElementById("section-1");
-    if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: "smooth" });
+  const section1 = "About Me";
+  const section2 = "Skills";
+  const section3 = "Projects";
+  const section4 = "Career";
+  const handleClickScroll = (item: string) => {
+    const se1 = document.getElementById("section-1");
+    const se2 = document.getElementById("section-2");
+    const se3 = document.getElementById("section-3");
+    const se4 = document.getElementById("section-4");
+    if (item === section1 && se1) {
+      se1.scrollIntoView({ behavior: "smooth" });
+    } else if (item === section2 && se2) {
+      se2.scrollIntoView({ behavior: "smooth" });
+    } else if (item === section3 && se3) {
+      se3.scrollIntoView({ behavior: "smooth" });
+    } else if (item === section4 && se4) {
+      se4.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   return (
     <header className={styles.header}>
       <div className={styles.flexItems}>
@@ -39,11 +52,19 @@ export default function Header() {
         {/* </Link> */}
       </div>
       <Menu>
-        <TitleColor>About Me</TitleColor>
-        <TitleColor onClick={() => handleClickScroll()}>Skills</TitleColor>
-        <TitleColor>Archiving</TitleColor>
-        <TitleColor>Projects</TitleColor>
-        <TitleColor>Career</TitleColor>
+        <TitleColor onClick={() => handleClickScroll(section1)}>
+          {section1}
+        </TitleColor>
+        <TitleColor onClick={() => handleClickScroll(section2)}>
+          {section2}
+        </TitleColor>
+        {/* <TitleColor>Archiving</TitleColor> */}
+        <TitleColor onClick={() => handleClickScroll(section3)}>
+          {section3}
+        </TitleColor>
+        <TitleColor onClick={() => handleClickScroll(section4)}>
+          {section4}
+        </TitleColor>
       </Menu>
       <Hamburger>
         <Image src={Hambur} alt="" style={{ width: "4vh", height: "3vh" }} />
@@ -53,13 +74,13 @@ export default function Header() {
 }
 
 const TitleColor = styled.h2`
-  color: ${({ theme }) => theme.colors.orange};
+  color: #1263ce;
   margin-left: 2vw;
   font-size: 1rem;
   font-family: PreLight;
 `;
 const LogoText = styled.h2`
-  color: ${({ theme }) => theme.colors.orange};
+  color: #1263ce;
   margin-left: 2vw;
   font-size: 1rem;
   font-family: PreBold;

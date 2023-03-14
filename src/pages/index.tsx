@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import GoTopBtn from "@/components/GoTopBtn/GoTopBtn";
 import Main from "@/components/Main";
 import { Fragment } from "react";
@@ -10,6 +11,7 @@ export default function Home() {
       <Header />
       <Main />
       <GoTopBtn />
+      <Footer />
     </Fragment>
   );
 }
