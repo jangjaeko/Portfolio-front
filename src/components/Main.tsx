@@ -3,6 +3,7 @@ import FirstSection from "./FirstSection/FirstSection";
 import AboutMe from "./AboutMe/AboutMe";
 import Skills from "./Skills/Skills";
 import Projects from "./Projects/Projects";
+import Career from "./Career/Career";
 export default function Main() {
   return (
     <div>
@@ -17,6 +18,9 @@ export default function Main() {
       </section>
       <section id="section-3">
         <Projects />
+      </section>
+      <section id="section-4">
+        <Career />
       </section>
     </div>
   );

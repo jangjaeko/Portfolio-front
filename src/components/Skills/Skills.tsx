@@ -8,23 +8,23 @@ export default function Skills() {
         <div className="col-md-6  col-lg-4">
           <BigSection>
             <SkillsTitle>Frontend</SkillsTitle>
-            <hr style={{ width: "100%", color: "#1263CE" }} />
+            <Hline />
           </BigSection>
         </div>
         <div className="col-md-6  col-lg-4">
           <BigSection>
             <SkillsTitle>Backend</SkillsTitle>
-            <hr style={{ width: "100%", color: "#1263CE" }} />
+            <Hline />
           </BigSection>
           <BigSection style={{ marginTop: "5vh" }}>
             <SkillsTitle>Mobile App</SkillsTitle>
-            <hr style={{ width: "100%", color: "#1263CE" }} />
+            <Hline />
           </BigSection>
         </div>
         <div className="col-md-6  col-lg-4">
           <BigSection>
             <SkillsTitle>Version Control</SkillsTitle>
-            <hr style={{ width: "100%", color: "#1263CE" }} />
+            <Hline />
           </BigSection>
         </div>
       </ContentDiv>
@@ -64,4 +64,10 @@ const ContentDiv = styled.span`
     display: flex,
     align-Items: center,
     
+`;
+const Hline = styled.div`
+  width: 100%;
+  height: 0.3vh;
+  background-color: #1263ce;
+  margin-top: 2vh;
 `;
