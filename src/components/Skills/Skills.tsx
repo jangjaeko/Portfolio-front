@@ -1,5 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import Image from "next/image";
+import boot from "./images/bootstrap.png";
+import ht from "./images/css.png";
+import jq from "./images/ajax.png";
+import ne from "./images/next.png";
+import re from "./images/react.png";
+import red from "./images/redux.png";
+import ty from "./images/typescript.png";
+import node from "./images/node.png";
+import nest from "./images/nest.svg";
 export default function Skills() {
   return (
     <MainView>
@@ -9,12 +19,21 @@ export default function Skills() {
           <BigSection>
             <SkillsTitle>Frontend</SkillsTitle>
             <Hline />
+            <LogoImages src={ht} alt="" />
+            <LogoImages src={ty} alt="" />
+            <LogoImages src={re} alt="" />
+            <LogoImages src={red} alt="" />
+            <LogoImages src={ne} alt="" />
+            <LogoImages src={jq} alt="" />
+            <LogoImages src={boot} alt="" />
           </BigSection>
         </div>
         <div className="col-md-6  col-lg-4">
           <BigSection>
             <SkillsTitle>Backend</SkillsTitle>
             <Hline />
+            <LogoImages src={node} alt="" />
+            <LogoImages src={nest} alt="" />
           </BigSection>
           <BigSection style={{ marginTop: "5vh" }}>
             <SkillsTitle>Mobile App</SkillsTitle>
@@ -70,4 +89,10 @@ const Hline = styled.div`
   height: 0.3vh;
   background-color: #1263ce;
   margin-top: 2vh;
+`;
+
+const LogoImages = styled(Image)`
+  width: 100%;
+  height: 13vh;
+  margin-top: 3vh;
 `;
