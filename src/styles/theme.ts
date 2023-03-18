@@ -59,6 +59,11 @@ const common = {
     display: flex;
     align-items: center;
     `,
+  flexAlignCenter: `
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    `,
   flexColumn: `
       display: flex;
       flex-direction: column;

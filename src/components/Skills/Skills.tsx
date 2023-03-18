@@ -109,7 +109,7 @@ const SkillsTitle = styled.span`
   color: #1263ce;
 `;
 
-const ContentDiv = styled.span`
+const ContentDiv = styled.div`
   display: flex;
   width: 100%;
   padding-left: 10%;
