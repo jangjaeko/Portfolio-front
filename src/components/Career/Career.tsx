@@ -5,8 +5,8 @@ export default function Career() {
     <MainView>
       <Title>Career</Title>
       <Layer>
-        <Left></Left>
-        <Right></Right>
+        <Left>Logo</Left>
+        <Right>text</Right>
       </Layer>
     </MainView>
   );

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
-import Bg from "./Backgroundimg.jpg";
+import Bg from "./images/Backgroundimg.jpg";
 export default function FirstSection() {
   const gotodown = () => {
     window.scrollTo({
