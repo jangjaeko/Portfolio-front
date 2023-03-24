@@ -2,7 +2,27 @@ import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 import Bg from "./images/Backgroundimg.jpg";
+import {
+  collection,
+  getDoc,
+  getDocs,
+  addDoc,
+  updateDoc,
+  doc,
+  deleteDoc,
+} from "firebase/firestore";
+import db from "../../Firebase/firebaseConfig";
 export default function FirstSection() {
+  React.useEffect(() => {
+    //파이어베이스 잘 db확인해보기
+    console.log(db);
+
+    // collection(db정보,콜렉션 이름)
+    // collection(db,"card")
+    //collection의 모든 도큐먼트 정보 가져오기
+    const query = getDocs(collection(db, "collection(db,card)"));
+    console.log(query);
+  }, []);
   const gotodown = () => {
     window.scrollTo({
       top: 100,
