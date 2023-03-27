@@ -11,24 +11,24 @@ import {
   doc,
   deleteDoc,
 } from "firebase/firestore";
-import db from "../../Firebase/firebaseConfig";
+import { firestore } from "../../Firebase/firebaseConfig";
 export default function FirstSection() {
-  React.useEffect(() => {
-    //파이어베이스 잘 db확인해보기
-    console.log(db);
+  // React.useEffect(() => {
+  //   //파이어베이스 잘 db확인해보기
+  //   console.log(firestore);
 
-    // collection(db정보,콜렉션 이름)
-    // collection(db,"card")
-    //collection의 모든 도큐먼트 정보 가져오기
-    const query = getDocs(collection(db, "collection(db,card)"));
-    console.log(query);
-  }, []);
-  const gotodown = () => {
-    window.scrollTo({
-      top: 100,
-      behavior: "smooth",
-    });
-  };
+  //   // collection(db정보,콜렉션 이름)
+  //   // collection(db,"card")
+  //   //collection의 모든 도큐먼트 정보 가져오기
+  //   const query = getDocs(collection(firestore, "collection(db,card)"));
+  //   console.log(query);
+  // }, []);
+  // const gotodown = () => {
+  //   window.scrollTo({
+  //     top: 100,
+  //     behavior: "smooth",
+  //   });
+  // };
   return (
     <MainView style={{ height: "80vh" }}>
       <Image

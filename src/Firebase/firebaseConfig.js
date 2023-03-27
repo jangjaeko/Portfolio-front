@@ -1,7 +1,9 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-var admin = require("firebase-admin");
+import admin from "firebase-admin";
+
+import "firebase/compat/auth";
+import "firebase/compat/firestore";
+// import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -19,10 +21,10 @@ const firebaseConfig = {
 };
 
 // firebaseConfig 정보로 firebase 시작
-firebase.initializeApp(firebaseConfig);
+admin.initializeApp(firebaseConfig);
 
 // firebase의 firestore 인스턴스를 변수에 저장
-const firestore = firebase.firestore();
+const firestore = admin.firestore();
 
 // 필요한 곳에서 사용할 수 있도록 내보내기
 // 다른 곳에서 불러올때 firestore로 불러와야 함!!

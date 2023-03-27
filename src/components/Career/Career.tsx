@@ -1,13 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import InnerBlock from "./InnerBlock";
 export default function Career() {
   return (
     <MainView>
       <Title>Career</Title>
-      <Layer>
-        <Left>Logo</Left>
-        <Right>text</Right>
-      </Layer>
+      <InnerBlock />
     </MainView>
   );
 }
@@ -25,15 +23,4 @@ const Title = styled.span`
   font-family: PreExBold;
   color: #cddff5;
   font-size: 1.8rem;
-`;
-
-const Layer = styled.div`
-  width: 100%;
-  ${({ theme }) => theme.common.flexRow};
-`;
-const Left = styled.div`
-  width: 30%;
-`;
-const Right = styled.div`
-  width: 30%;
 `;
