@@ -56,11 +56,11 @@ export default function FirstSection() {
         }}
       ></div>
       <SubText style={{ marginTop: "5vh" }}>
-        안녕하세요.
+        Hi, I love developer and start-up culture
         <br />
-        공부가 취미인 풀 스택 웹 개발자입니다.
+        Alway be patient and humble.
         <br />
-        매우 꼼꼼한 성격, 그리고 공부를 밥 먹듯이 하는 습관이 저의 장점입니다.
+        Alway learn and heading forward.
       </SubText>
     </MainView>
   );

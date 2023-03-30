@@ -22,5 +22,5 @@ const MainView = styled.div`
 const Title = styled.span`
   font-family: PreExBold;
   color: #cddff5;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
 `;
