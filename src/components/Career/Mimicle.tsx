@@ -17,7 +17,7 @@ export default function Mimicle() {
       <Right>
         <Title> 미미클 (Mimicle)</Title>
         <DateText>2021.11 ~ 2022.08</DateText>
-        <ComDesc>기술혁신을 통한 투명한 인플루언서 마케팅 스타트업</ComDesc>
+        <ComDesc>그림을 통한 감정 공유 플랫폼 스타트업</ComDesc>
         <hr style={{ width: "100%" }} />
         <DateText>
           {" "}
@@ -28,8 +28,15 @@ export default function Mimicle() {
           Major Work
         </DateText>
         <Desc>
-          - React-native 와 Node JS 이용한 크로스 플랫폼 앱 개발
-          <br />- React 를 이용한 웹 프론트 개발 <br />
+          - 바닐라 JS로 만든 파일을 FTP 방식으로 웹앱 형식의 앱 제작 및 배포
+          <br />
+          - 스페인어앱 개발 유지/보수
+          <br />
+          - 프랑스어앱 개발 배포 유지/보수
+          <br />
+          - 데이터베이스 수정 및 개발
+          <br />
+          - 기능 개발
           <br />
         </Desc>
         <hr style={{ width: "100%" }} />
@@ -48,7 +55,7 @@ export default function Mimicle() {
             size={25}
             style={{ marginBottom: 5, marginRight: 5 }}
           />{" "}
-          Project Name : MarkIn App
+          Project Name : Mimicle ES App
         </DateText>
         <Work>
           <BsBookmarkFill
@@ -57,7 +64,7 @@ export default function Mimicle() {
           />
           Language and development environment
         </Work>
-        <Desc>- React-native, JavaScript, HTML/CSS, TypeScript, Git</Desc>
+        <Desc>- JavaScript, Html, PHP, CSS, Mysql</Desc>
         <Work>
           <BsFillAwardFill
             size={20}
@@ -66,8 +73,10 @@ export default function Mimicle() {
           Main tasks and details
         </Work>
         <Desc>
-          - React-native 를 사용하여 크로스플랫폼 프론트앤드 개발
-          <br /> - NodeJS 를 통한 백앤드 개발 <br />- 출시 및 버전관리
+          - 바닐라 JS로 만든 파일을 FTP 방식으로 웹앱 형식의 앱 제작 및 배포
+          <br /> - 데이터베이스 수정 및 개발 <br />- 모바일 환경 적용하여 반응형
+          페이지 제작
+          <br />- 서비스 주요 기능 및 오류 처리
         </Desc>
         {/* 프로젝트 2 */}
         <hr style={{ width: "100%" }} />
@@ -77,7 +86,7 @@ export default function Mimicle() {
             size={25}
             style={{ marginBottom: 5, marginRight: 5 }}
           />{" "}
-          Project Name : Creplanet Web
+          Project Name : Mimicle FR App
         </DateText>
         <Work>
           <BsBookmarkFill
@@ -86,7 +95,7 @@ export default function Mimicle() {
           />
           Language and development environment
         </Work>
-        <Desc>- React, javascript, HTML/CSS, TypeScript, Git</Desc>
+        <Desc>- JavaScript, Html, PHP, CSS, Mysql</Desc>
         <Work>
           <BsFillAwardFill
             size={20}
@@ -95,8 +104,10 @@ export default function Mimicle() {
           Main tasks and details
         </Work>
         <Desc>
-          - React 를 이용하여 프론트앤드 개발 <br />- FireBase 를 이용한 무중단
-          배포
+          - 바닐라 JS로 만든 파일을 FTP 방식으로 웹앱 형식의 앱 제작 및 배포
+          <br />- 데이터베이스 수정 및 개발 <br />- 모바일 환경 적용하여 반응형
+          페이지 제작
+          <br />- 서비스 주요 기능 및 오류 처리
         </Desc>
       </Right>
     </div>
