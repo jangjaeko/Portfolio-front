@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
@@ -19,6 +20,7 @@
     "eslint-config-next": "13.2.3",
     "firebase": "^9.18.0",
     "firebase-admin": "^11.5.0",
+    "net": "^1.0.2",
     "next": "13.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -33,5 +35,12 @@
     "eslint-config-prettier": "^8.6.0",
     "prettier": "2.8.4",
     "sass": "^1.58.3"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false,
+    "tls": false,
+    "child_process": false
   }
 }

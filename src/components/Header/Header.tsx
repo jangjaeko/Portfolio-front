@@ -48,7 +48,7 @@ export default function Header() {
           height={58}
           alt={""}
         /> */}
-        <LogoText onClick={() => gotoTop()}>JJH's Portpolio</LogoText>
+        <LogoText onClick={() => gotoTop()}>JJH Portpolio</LogoText>
         {/* </Link> */}
       </div>
       <Menu>

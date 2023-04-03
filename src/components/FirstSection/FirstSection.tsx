@@ -23,12 +23,12 @@ export default function FirstSection() {
   //   const query = getDocs(collection(firestore, "collection(db,card)"));
   //   console.log(query);
   // }, []);
-  // const gotodown = () => {
-  //   window.scrollTo({
-  //     top: 100,
-  //     behavior: "smooth",
-  //   });
-  // };
+  const gotodown = () => {
+    window.scrollTo({
+      top: 100,
+      behavior: "smooth",
+    });
+  };
   return (
     <MainView style={{ height: "80vh" }}>
       <Image
@@ -44,7 +44,7 @@ export default function FirstSection() {
       />
       <Title style={{ marginTop: "4vh" }} onClick={() => gotodown()}>
         {" "}
-        장재호(Michael)'s Portpolio
+        장재호(Michael) Portpolio
       </Title>
       <Title>- Web / App Developer -</Title>
       <div

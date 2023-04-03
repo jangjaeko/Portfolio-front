@@ -9,7 +9,7 @@ import { BsBookmarkFill } from "react-icons/bs";
 
 export default function Mimicle() {
   return (
-    <div>
+    <div style={{ width: "40vw" }}>
       <Left>
         <Image src={Logo} style={{ width: "15vh", height: "10vh" }} alt="" />
       </Left>
