@@ -16,9 +16,9 @@ export default function Main() {
       <section id="section-2">
         <Skills />
       </section>
-      <section id="section-3">
+      {/* <section id="section-3">
         <Projects />
-      </section>
+      </section> */}
       <section id="section-4">
         <Career />
       </section>

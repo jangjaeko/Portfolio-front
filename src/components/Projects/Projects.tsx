@@ -4,15 +4,23 @@ import Image from "next/image";
 
 export default function Projects() {
   return (
+    // <MainView>
+    //   <Title>Projects</Title>
+    //   <BigSection>
+    //     <span>asdasdsa</span>
+    //     <ContentDiv className="row">
+    //       <div className="col-md-12  col-lg-6">gallery</div>
+    //       <div className="col-md-12  col-lg-6">text</div>
+    //     </ContentDiv>
+    //   </BigSection>
+    // </MainView>
     <MainView>
-      <Title>Projects</Title>
-      <BigSection>
-        <span>asdasdsa</span>
-        <ContentDiv className="row">
-          <div className="col-md-12  col-lg-6">gallery</div>
-          <div className="col-md-12  col-lg-6">text</div>
-        </ContentDiv>
-      </BigSection>
+      <iframe
+        src="https://gamma.app/embed/fkjqtbehgxtctij"
+        style={{ width: "700px", maxWidth: "100%", height: "450px" }}
+        allow="fullscreen"
+        title="Discover Seoul"
+      ></iframe>
     </MainView>
   );
 }
